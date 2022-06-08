@@ -1,2 +1,8 @@
 $ yarn init
+
+// for --dev is only for development
+// if we wanna go serious. This will be changed
 $ yarn add --dev hardhat
+
+// install hardhat in this directory
+$ yarn hardhat
