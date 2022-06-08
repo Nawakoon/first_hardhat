@@ -6,3 +6,6 @@ $ yarn add --dev hardhat
 
 // install hardhat in this directory
 $ yarn hardhat
+
+// add prettier to remove ; in js file
+$ yarn add --dev prettier prettier-plugin-solidity
