@@ -1,0 +1,8 @@
+{
+  "name": "my_hardhat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.7"
+  }
+}
