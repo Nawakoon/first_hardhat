@@ -1,5 +1,4 @@
 // import
-const { verifyMessage } = require("ethers/lib/utils")
 const { ethers, run, network } = require("hardhat")
 
 // async main
@@ -7,6 +6,9 @@ async function main() {
   const SimpleStorageFactory = await ethers.getContractFactory("SimpleStorage")
   console.log("Deploying contract")
   const simpleStorage = await SimpleStorageFactory.deploy()
+  // if we didn't put any agrument
+  // hardhat will run this function in defaultNetwork -> hardhat network
+  // work like $ yarn hardhat run scripts/deploy.js --network hardhat
   await simpleStorage.deployed()
   console.log(`Deployed contract to: ${simpleStorage.address}`)
   // see what happens when we deploy to hardhat local network

@@ -9,3 +9,6 @@ $ yarn hardhat
 
 // add prettier to remove ; in js file
 $ yarn add --dev prettier prettier-plugin-solidity
+
+// add dotenv
+$ yarn add --dev dotenv
