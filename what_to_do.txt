@@ -12,3 +12,8 @@ $ yarn add --dev prettier prettier-plugin-solidity
 
 // add dotenv
 $ yarn add --dev dotenv
+
+// in verify section
+// https://docs.etherscan.io/tutorials/verifying-contracts-programmatically
+// https://hardhat.org/plugins/nomiclabs-hardhat-etherscan#hardhat-etherscan
+$ yarn add --dev @nomiclabs/hardhat-etherscan
