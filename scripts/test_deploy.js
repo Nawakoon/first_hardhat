@@ -12,13 +12,14 @@ async function main() {
     await simple.deployed()
     console.log(`Deployed contract to: ${simple.address}`)
     // see what happens when we deploy to hardhat local network
-    if (network.config.chainId === 4 && process.env.ETHERSCAN_API_KEY) {
+
+    if (network.config.chainId === 4 && process.env.ETERSCAN_API_KEY) {
         console.log("Waiting for block confirmations...")
+        // wait ETHERSCAN to detect contract
         await simple.deployTransaction.wait(6)
         // [] mean the lastest address
         await verify(simple.address, [])
     }
-
     const currentValue = await simple.retrieve()
     console.log(`Currennt Value is: ${currentValue}`)
 
@@ -35,8 +36,10 @@ async function main() {
     // console.log(typeof handsomeGuy)      // this guy is string
 }
 
+// if something go wrong try this guy
+// https://ethereum.stackexchange.com/questions/121176/error-when-trying-to-verify-contract/123243#123243?newreg=2f23593b9ee54a7b8717b9911ecd61b3
 const verify = async (contractAddress, args) => {
-    console.log("Verifying contract... ")
+    console.log("Verifying contract...")
     try {
         await run("verify:verify", {
             address: contractAddress,

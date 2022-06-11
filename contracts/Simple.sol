@@ -10,7 +10,7 @@ contract Simple {
     string dev;
 
     constructor() {
-        dev = "me";
+        dev = "absolutely me";
     }
 
     struct People {

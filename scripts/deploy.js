@@ -14,7 +14,7 @@ async function main() {
     await simpleStorage.deployed()
     console.log(`Deployed contract to: ${simpleStorage.address}`)
     // see what happens when we deploy to hardhat local network
-    if (network.config.chainId === 4 && process.env.ETHERSCAN_API_KEY) {
+    if (network.config.chainId === 4 && process.env.ETERSCAN_API_KEY) {
         console.log("Waiting for block confirmations...")
         await simpleStorage.deployTransaction.wait(6)
         await verify(simpleStorage.address, [])
