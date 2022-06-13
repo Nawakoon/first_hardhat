@@ -21,3 +21,6 @@ $ yarn add --dev @nomiclabs/hardhat-etherscan
 // we can interact with node using this 
 $ yarn hardhat console --network <network>
 yarn hardhat console --network localhost
+
+// see gas consume for each function
+$ yarn add hardhat-gas-reporter --dev
