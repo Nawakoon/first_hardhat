@@ -24,3 +24,6 @@ yarn hardhat console --network localhost
 
 // see gas consume for each function
 $ yarn add hardhat-gas-reporter --dev
+
+// add solidity-coverage
+$ yarn add --dev solidity-coverage
