@@ -1,7 +1,5 @@
-// import
 const { ethers, run, network } = require("hardhat")
 
-// async main
 async function main() {
     const SimpleFactory = await ethers.getContractFactory("Simple")
     console.log("Deploying contract")
@@ -54,7 +52,6 @@ const verify = async (contractAddress, args) => {
     }
 }
 
-// main
 main()
     .then(() => process.exit(0))
     .catch((error) => {

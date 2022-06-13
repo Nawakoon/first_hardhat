@@ -17,3 +17,7 @@ $ yarn add --dev dotenv
 // https://docs.etherscan.io/tutorials/verifying-contracts-programmatically
 // https://hardhat.org/plugins/nomiclabs-hardhat-etherscan#hardhat-etherscan
 $ yarn add --dev @nomiclabs/hardhat-etherscan
+
+// we can interact with node using this 
+$ yarn hardhat console --network <network>
+yarn hardhat console --network localhost
